@@ -92,7 +92,7 @@ export const visitorSchema = z
       } else if (data.gov_id_type === "PAN" && !panRegex.test(data.gov_id_number.toUpperCase())) {
         ctx.addIssue({
           code: z.ZodIssueCode.custom,
-          message: "PAN must be in format: ABCDE1234F (5 letters, 4 digits, 1 letter).",
+          message: "PAN must be in format: ABCDE1234F.",
           path: ["gov_id_number"],
         });
       }
