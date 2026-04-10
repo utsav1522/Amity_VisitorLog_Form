@@ -143,7 +143,6 @@ const ProfilePhotoField = ({ value, onChange, error, disabled, readOnly }) => {
         ref={fileInputRef}
         type="file"
         accept="image/*"
-        capture="user"
         className="photo-file-input"
         onChange={handleFileChange}
         disabled={disabled || readOnly}
